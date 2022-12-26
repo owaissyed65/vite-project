@@ -1,0 +1,14 @@
+*{
+ /* text-transform: uppercase; */
+ background: #fff;
+ align-items: center;
+ justify-self: center;
+ justify-items: center;
+}
+@media screen and(max-width:888px) {
+    .s{
+     background-color: #fff;
+     text-align: center;
+     
+    }
+}
