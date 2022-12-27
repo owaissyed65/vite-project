@@ -11,15 +11,14 @@ html{
 }
 .progress-bar {
     position: fixed;
-    top: 0px;
+    top: 0;
     left: 0;
     right: 0;
     height: 10px;
-    background: ${({ theme }) => theme.hover.color};
+    
+    background:#FF6F61;
+    //  ${({ theme }) => theme.hover.color};
     transform-origin: 0%;
-    @media screen and (max-width:${({ theme }) => theme.media.mobile}){
-        top: 0px;
-    }
   }
 `
 export default Global;
