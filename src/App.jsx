@@ -1,18 +1,22 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import Navbar from './Components/Header/NavbarFolder/Navbar'
 import Global from './StyledComponent/Global'
 import { Theme } from './StyledComponent/ThemeAndVariable.js'
-
+import { motion, useScroll } from "framer-motion";
+import Header from './Components/Header/Header'
 const App = () => {
-
-
+  const { scrollYProgress } = useScroll();
   return (
     <>
       <ThemeProvider theme={Theme}>
         <Global />
-        <Navbar />
-        <div style={{height:'200vh',backgroundColor:'black'}}></div>
+
+        <Header />
+        <motion.div
+          className="progress-bar"
+          style={{ scaleX: scrollYProgress }}
+        />
+        <div style={{ height: '200vh', backgroundColor: 'black' }}></div>
       </ThemeProvider>
     </>
   )

@@ -4,11 +4,42 @@
  align-items: center;
  justify-self: center;
  justify-items: center;
+ align-self: center;
+ justify-content: space-evenly;
+ opacity: calc();
+ /* flex-wrap: ; */
+}
+*::before{
+    content: www;
 }
 @media screen and(max-width:888px) {
     .s{
+        cursor: pointer;
      background-color: #fff;
      text-align: center;
-     
+        background-blend-mode: darken;
+        filter: invert(100%);
+        filter: opacity(2);
     }
 }
+/* span{
+    background-color:red;
+    &::before{
+    content:"";
+    animation:logo infinite 5s alternate;
+}
+}
+
+@keyframes logo{
+    0%{
+        content:"hello";
+        background-color:red;
+    }
+    50%{
+        content:"hello world";
+        background-color:yellow;
+    }
+    100%{
+        content:"hello world i am";
+    }
+} */

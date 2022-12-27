@@ -9,5 +9,17 @@ const Global = createGlobalStyle`
 html{
     font-size:62.5%
 }
+.progress-bar {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: ${({ theme }) => theme.hover.color};
+    transform-origin: 0%;
+    @media screen and (max-width:${({ theme }) => theme.media.mobile}){
+        top: 0px;
+    }
+  }
 `
 export default Global;
