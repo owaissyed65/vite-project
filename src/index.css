@@ -17,7 +17,7 @@
 @media screen and(max-width:888px) {
     .s {
         cursor: pointer;
-        align-items: ;
+        /* align-items: ; */
         border-radius: 2rem;
         background-color: #fff;
         text-align: center;

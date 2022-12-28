@@ -100,4 +100,4 @@ div.menu{
     }
 }
 `;
-export default NavbarStarting
+export default NavbarStarting;

@@ -15,7 +15,7 @@ const NavbarDown = () => {
                     className="box1"
                 >
                     <h2>{"<Coder>"}</h2>
-                    <span>who writes efficient and elegant code</span>{" "}
+                    <span>who writes efficient and elegant code</span>
                 </motion.div>
                 <motion.div
                     initial={{ x: -150 }}

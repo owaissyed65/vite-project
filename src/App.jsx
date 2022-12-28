@@ -5,6 +5,7 @@ import { Theme } from "./StyledComponent/ThemeAndVariable.js";
 import { motion, useScroll } from "framer-motion";
 import Header from "./Components/Header/Header";
 import Skills from "./Components/Skills/Skills";
+import Project from "./Components/Project/Project";
 const App = () => {
   const { scrollYProgress } = useScroll();
   return (
@@ -14,10 +15,10 @@ const App = () => {
         <Header />
         <motion.div
           className="progress-bar"
-          // initial={{width:0}}
           style={{ scaleX: scrollYProgress, zIndex: 2}}
         />
-        <Skills />
+        <Skills/>
+        <Project/>
       </ThemeProvider>
     </>
   );

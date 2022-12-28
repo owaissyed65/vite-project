@@ -14,11 +14,12 @@ html{
     top: 0;
     left: 0;
     right: 0;
-    height: 10px;
+    height: 5px;
+    border-readius:5px;
     
     background:#FF6F61;
     //  ${({ theme }) => theme.hover.color};
     transform-origin: 0%;
   }
-`
+`;
 export default Global;

@@ -21,7 +21,7 @@ const SkillStyle = styled.div`
     height: 90%;
     display: flex;
     flex-wrap: wrap;
-    .skills1 {
+    .skills {
       //   background-color: pink;
       flex: 2;
       display: flex;
@@ -29,6 +29,7 @@ const SkillStyle = styled.div`
       align-items: center;
       justify-content: center;
       text-align: right;
+      gap:5px;
       span {
         margin-top: 2rem;
       }
@@ -43,25 +44,30 @@ const SkillStyle = styled.div`
       }
       .css3 {
         width: 90%;
-        background-color: blue;
+        background-color: #f4392f;
       }
       .javaScript {
         width: 75%;
-        background-color: blue;
+        background-color: #f4392f;
       }
       .java {
         width: 60%;
-        background-color: blue;
+        background-color: #f4392f;
+      }
+      .reactJs {
+        width: 85%;
+        background-color: #f4392f;
+      }
+      .clang {
+        width: 80%;
+        background-color: #f4392f;
+      }
+      .backend {
+        width: 70%;
+        background-color: #f4392f;
       }
     }
-    .skills2 {
-      //   background-color: purple;
-      flex: 2;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-    }
+
     .skill-box {
       width: 70%;
       background-color: #ddd;
@@ -116,5 +122,30 @@ const SkillStyle = styled.div`
       content: "Expertise";
     }
   }
+@media screen and (max-width:${({ theme }) => theme.media.mobile}){
+  .container{
+    // background-color:yellow;
+    flex-direction: column;
+    height:80%;
+    position:relative;
+    .skills{
+      flex:0.5;
+      .media{
+        margin-top:0.5rem;
+      }
+    }
+    .mediaQuery{
+      justify-content:flex-start;
+      gap:5px;
+    }
+    .skill-box {
+      width: 70%;
+      height: 8%;
+      border-radius: 2rem;
+      font-size:1rem;
+    }
+        
+  }
+}  
 `;
 export default SkillStyle;
