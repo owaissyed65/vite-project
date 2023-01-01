@@ -6,6 +6,7 @@ import { motion, useScroll } from "framer-motion";
 import Header from "./Components/Header/Header";
 import Skills from "./Components/Skills/Skills";
 import Experience from "./Components/Experience/Experience";
+import Project from "./Components/Projects/Project";
 const App = () => {
   const { scrollYProgress } = useScroll();
   return (
@@ -19,6 +20,7 @@ const App = () => {
         />
         <Skills />
         <Experience/>
+        <Project/>
       </ThemeProvider>
     </>
   );

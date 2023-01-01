@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="menu">
         {
           click !== true ? <motion.button initial={{ x: -100 }}
-            whileInView={{ x: 10 }} style={{ backgroundColor: '#34568B', border: 'none', cursor: 'pointer' }} onClick={() => setClick(true)}><UilBars size={"4rem"} color='white' /></motion.button> : <motion.button whileInView={{ x: 0 }} style={{ backgroundColor: '#34568B', border: 'none', cursor: 'pointer' }} onClick={() => setClick(false)}><UilTimes size={"4rem"} color='white' /></motion.button>
+            whileInView={{ x: 10 }} style={{ backgroundColor: '#34568B', border: 'none', cursor: 'pointer' }} onClick={() => setClick(true)}><UilBars size={"3rem"} color='white' /></motion.button> : <motion.button whileInView={{ x: 0 }} style={{ backgroundColor: '#34568B', border: 'none', cursor: 'pointer' }} onClick={() => setClick(false)}><UilTimes size={"3rem"} color='white' /></motion.button>
         }
       </div>
     </NavbarStarting>

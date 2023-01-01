@@ -29,7 +29,7 @@ const SkillStyle = styled.div`
       align-items: center;
       justify-content: center;
       text-align: right;
-      gap:5px;
+      gap: 5px;
       span {
         margin-top: 2rem;
       }
@@ -122,30 +122,29 @@ const SkillStyle = styled.div`
       content: "Expertise";
     }
   }
-@media screen and (max-width:${({ theme }) => theme.media.mobile}){
-  .container{
-    // background-color:yellow;
-    flex-direction: column;
-    height:80%;
-    position:relative;
-    .skills{
-      flex:0.5;
-      .media{
-        margin-top:0.5rem;
+  @media screen and (max-width: ${({ theme }) => theme.media.mobile}) {
+    .container {
+      // background-color:yellow;
+      flex-direction: column;
+      height: 80%;
+      position: relative;
+      .skills {
+        flex: 0.5;
+        .media {
+          margin-top: 0.5rem;
+        }
+      }
+      .mediaQuery {
+        justify-content: flex-start;
+        gap: 5px;
+      }
+      .skill-box {
+        width: 70%;
+        height: 8%;
+        border-radius: 2rem;
+        font-size: 1rem;
       }
     }
-    .mediaQuery{
-      justify-content:flex-start;
-      gap:5px;
-    }
-    .skill-box {
-      width: 70%;
-      height: 8%;
-      border-radius: 2rem;
-      font-size:1rem;
-    }
-        
   }
-}  
 `;
 export default SkillStyle;

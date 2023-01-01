@@ -73,6 +73,7 @@ const NavbarEnding = styled.div`
         justify-content: center;
         align-items: center;
         font-size: 16px;
+        margin-top: 4rem;
       }
       .box2 {
         // background-color:red;

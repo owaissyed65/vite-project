@@ -11,5 +11,6 @@ export const Theme = {
     media: {
         mobile: "669px",
     },
+    colorsanimated: '#f4392f'
 };
 export const Variable = {};

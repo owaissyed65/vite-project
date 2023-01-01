@@ -6,9 +6,12 @@
     justify-items: center;
     align-self: center;
     justify-content: space-evenly;
+    justify-content: flex-start;
+    
     opacity: calc();
     background-color:conic-gradient();
     /* flex-wrap: ; */
+    
 }
 
 *::before {
