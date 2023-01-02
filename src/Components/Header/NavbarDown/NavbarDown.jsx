@@ -5,7 +5,7 @@ import NavbarEnding from "./NavbarDownStyle";
 const NavbarDown = () => {
     return (
         <NavbarEnding>
-            <motion.div className="opac">
+            <motion.div className="opac" id="navbar">
                 <img src={header} alt="image" />
             </motion.div>
             <div className="box">
@@ -14,7 +14,7 @@ const NavbarDown = () => {
                     whileInView={{ x: 0 }}
                     className="box1"
                 >
-                    <h2>{"<Coder>"}</h2>
+                    <h2>&lt;Coder&gt;</h2>
                     <span>who writes efficient and elegant code</span>
                 </motion.div>
                 <motion.div

@@ -1,68 +1,29 @@
-* {
-    /* text-transform: uppercase; */
-    background: #fff;
-    align-items: center;
-    justify-self: center;
-    justify-items: center;
-    align-self: center;
-    justify-content: space-evenly;
-    justify-content: flex-start;
-    
-    opacity: calc();
-    background-color:conic-gradient();
-    /* flex-wrap: ; */
-    
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
+
+body {
+    background-color: rgb(253, 253, 255);
+    font-family: 'Signika', sans-serif;
 }
 
-*::before {
-    content: www;
+.swiper {
+    width: 90%;
+    height: 90%;
 }
 
-@media screen and(max-width:888px) {
-    .s {
-        
-        cursor: pointer;
-        /* align-items: ; */
-        border-radius: 2rem;
-        background-color: #fff;
-        text-align: center;
-        background-blend-mode: darken;
-        filter: invert(100%);
-        filter: opacity(2);
-        
-    }
-    
+.swiper-slide {
+    /* text-align: center; */
+
+    font-size: 25px;
+    word-spacing: 1px;
+    /* background: yellowgreen; */
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* margin-top: 10rem; */
 }
 
-/* span{
-    background-color:red;
-    &::before{
-    content:"";
-    animation:logo infinite 5s alternate;
+:root {
+    --color: rgb(189, 191, 196);
+    --font-color: rgb(105, 102, 102);
 }
-}
-
-@keyframes logo{
-    0%{
-        content:"hello";
-        background-color:red;
-    }
-    50%{
-        content:"hello world";
-        background-color:yellow;
-    }
-    100%{
-        content:"hello world i am";
-    }
-} */
-/* .javaScript{
-    width:75%;
-    background-color:blue;
-    height:100%;
-    border-radius:2rem;
-    p{
-      padding-right:7px;
-      height:100%;
-      color:white;
-    }
-  } */

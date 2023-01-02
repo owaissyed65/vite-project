@@ -4,7 +4,7 @@ import { Div, DivStyling, ExperienceStyle } from './ExperienceStyle'
 
 const Experience = () => {
   return (
-    <DivStyling >
+    <DivStyling id='experience'>
       <h1 id='h1' style={{ textAlign: 'center' }}>My&nbsp;</h1>
       <Div>
         <ExperienceStyle className='experince' >

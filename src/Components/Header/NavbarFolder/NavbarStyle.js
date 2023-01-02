@@ -8,13 +8,13 @@ font-size:2rem;
 display:flex;
 height:7.4rem;
 font-family:${({ theme }) => theme.nav.fontFamily};
-z-index:1;
+z-index:10;
 div.logo{
         flex:1.5;
         // background-color:purple;
-        margin-left:2rem;
         text-align:center;
         overflow:hidden;
+        margin-left:5px;
         a{
             text-decoration: none;   
             img{
@@ -43,6 +43,7 @@ ul.list1{
         a{
             text-decoration: none;   
             color:white;
+            cursor: pointer;
             text-transform:upperclass;
             &:hover{
                 color:${({ theme }) => theme.hover.color}; !important
@@ -58,7 +59,7 @@ div.menu{
 @media screen and (max-width:${({ theme }) => theme.media.mobile}){
     position:Sticky;
     top:0;
-    z-index:1;
+    z-index:10;
     div.menu{
         flex:1.5;
         display:flex;
@@ -75,7 +76,6 @@ div.menu{
         display:block;
         position:absolute;
         top:7rem;
-        // height:50vh;
         width:100%;
         text-align:center;
         padding:0.5rem;

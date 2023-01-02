@@ -4,18 +4,22 @@ import { UilBars } from '@iconscout/react-unicons'
 import { UilTimes } from '@iconscout/react-unicons'
 import { motion } from "framer-motion"
 import logo from '../../../images/logo.png';
+import { Link } from "react-scroll";
 const Navbar = () => {
   const [click, setClick] = useState(false);
   return (
     // div
     <NavbarStarting >
       {/* for left logo */}
-      <div className="logo"><a href="#"><motion.img initial={{ x: 100 }} whileInView={{ x: 0 }} whileHover={{ y: -2 }} src={logo} alt="" /></a></div>
+      <div className="logo" ><a href="#"><motion.img initial={{ x: 100 }} whileInView={{ x: -20 }} whileHover={{ y: -2 }} src={logo} alt="" /></a></div>
       {/* For btw lists */}
       <ul className={`${click !== true ? 'list1' : 'list2'}`}>
-        <motion.li initial={{ x: 100 }} whileInView={{ x: 0 }} whileHover={{ y: -2 }}><a href="#">home</a></motion.li>
-        <motion.li initial={{ x: 100 }} whileInView={{ x: 0 }} whileHover={{ y: -2 }}><a href="#">About</a></motion.li>
-        <motion.li initial={{ x: 100 }} whileInView={{ x: 0 }} whileHover={{ y: -2 }}><a href="#">Contact</a></motion.li>
+
+        <motion.li initial={{ x: 100 }} whileInView={{ x: 0 }} whileHover={{ y: -2 }}><Link activeClass="active" to="navbar" spy={true} smooth={true}>home</Link></motion.li>
+        <motion.li initial={{ x: 100 }} whileInView={{ x: 0 }} whileHover={{ y: -2 }}><Link to="skills" spy={true} smooth={true}>Skills</Link></motion.li>
+        <motion.li initial={{ x: 100 }} whileInView={{ x: 0 }} whileHover={{ y: -2 }}><Link to="experience" spy={true} smooth={true}>Experience</Link></motion.li>
+        <motion.li initial={{ x: 100 }} whileInView={{ x: 0 }} whileHover={{ y: -2 }}><Link to="projects" spy={true} smooth={true}>Projects</Link></motion.li>
+        <motion.li initial={{ x: 100 }} whileInView={{ x: 0 }} whileHover={{ y: -2 }}><Link to="hire" spy={true} smooth={true}>My Resume</Link></motion.li>
         <motion.li initial={{ x: 100 }} whileInView={{ x: 0 }} whileHover={{ y: -2 }}><a href="#">Blog</a></motion.li>
       </ul>
       {/* For Responsiveness */}

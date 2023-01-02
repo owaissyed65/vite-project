@@ -3,7 +3,7 @@ export const Theme = {
     scrollColor: "#ff0055",
     fontSize: '1.6rem',
     nav: {
-        fontFamily: "'Amatic SC', cursive",
+        fontFamily: "'Signika', sans-serif",
     },
     hover: {
         color: "#FF6F61",
