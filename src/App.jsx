@@ -10,6 +10,12 @@ import Project from "./Components/Projects/Project";
 import Footer from "./Components/Footer/Footer";
 import Hire from "./Components/Hire/Hire";
 import loading from './images/loading.gif'
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
+import Error from "./Components/Error";
+
 const GifDiv = styled.div`
 // background-color:red;
 height:35rem;
@@ -28,17 +34,15 @@ const App = () => {
   React.useEffect(() => {
     setTimeout(() => {
       setstate(true);
-    }, 2000);
+    }, Math.floor(Math.random() * 10000));
   }, []);
   const { scrollYProgress } = useScroll();
   return (
     state !== true ? <GifDiv>
       <img src={loading} alt="" />
-      
     </GifDiv> : (<>
       <ThemeProvider theme={Theme}>
         <Global />
-
         <Header />
         <motion.div
           className="progress-bar"

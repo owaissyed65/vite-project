@@ -5,11 +5,23 @@ import App from './App';
 import Store from './Redux/Store';
 import "swiper/css/bundle";
 import "./index.css"
-
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Error from './Components/Error';
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+    errorElement:<Error/>,
+    
+  },
+]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={Store}>
-      <App />
+    <RouterProvider router={router} />
     </Provider>
   </React.StrictMode>,
 )
