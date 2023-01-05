@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
-
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    
+}
+html{
+    font-size:62.5%
+}
 body {
     background-color: rgb(253, 253, 255);
     font-family: 'Signika', sans-serif;
 }
+
 
 .swiper {
     width: 90%;
