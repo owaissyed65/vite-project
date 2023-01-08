@@ -1,6 +1,7 @@
-export const action = (any) => {
+import actionConstant from "../ActionConstant/actionConstant";
+export const paramsAction = (params) => {
     return {
-        type: 'hello',
-        payload: 1
-    }
-}
+        type: actionConstant.params,
+        payload: params,
+    };
+};

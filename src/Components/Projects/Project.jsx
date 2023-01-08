@@ -15,6 +15,7 @@ const Project = () => {
         }}
         modules={[Pagination]}
         className="mySwiper"
+        // style={{}}
       >
         <SwiperSlide>
           <ProjectComponent

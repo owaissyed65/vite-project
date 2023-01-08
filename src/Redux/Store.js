@@ -13,4 +13,4 @@ const enhancer = composeEnhancers(
 )
 const Store = createStore(reducers, enhancer);
 
-export default Store
+export default Store;

@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
-import StateChange from "./StateChange";
+import { params } from "./params";
 
 const reducers = combineReducers({
-    StateChange: StateChange
+    params: params
 })
 export default reducers
