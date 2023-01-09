@@ -28,11 +28,11 @@ const Skills = () => {
           </div>
           <span className='media'>NodeJS And ExpressJS</span>
           <div className='skill-box'>
-            <motion.div initial={{ width: '0px' }} whileInView={{ width: '70%' }} className='box backend'><p >70%</p></motion.div>
+            <motion.div initial={{ width: '0px' }} whileInView={{ width: '65%' }} className='box backend'><p >65%</p></motion.div>
           </div>
           <span className='media'>C Language</span>
           <div className='skill-box'>
-            <motion.div initial={{ width: '0px' }} whileInView={{ width: '80%' }} className='box clang'><p >85%</p></motion.div>
+            <motion.div initial={{ width: '0px' }} whileInView={{ width: '75%' }} className='box clang'><p >75%</p></motion.div>
           </div>
         </div>
       </div>

@@ -42,7 +42,7 @@ export const ProjectImage = styled.div`
   }
 `;
 export const ProjectContent = styled.div`
-  height: 30%;
+  height: 35%;
   letter-spacing: 1px;
   width: 100%;
   display: flex;
@@ -57,7 +57,7 @@ export const ProjectContent = styled.div`
   }
   @media screen and (max-width: ${({ theme }) => theme.media.mobile}) {
     font-size: 1.1rem;
-    height: 45%;
+    min-height: 30%;
   }
   button {
     margin-top: 1rem;
@@ -80,6 +80,9 @@ export const DivContainer = styled.div`
       content:'';
       animation: project infinite linear 5s forwards;
     }
+  }
+  @media screen and (max-width: ${({ theme }) => theme.media.mobile}) {
+    min-height: 80rem;
   }
   @keyframes project {
     0% {

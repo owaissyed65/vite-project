@@ -33,11 +33,12 @@ export const BlogBox = styled.div`
   font-size: 1.6rem;
   margin-bottom: 2rem;
   margin-top: 4rem;
-  //   height: 10rem;
+  min-height: 15rem;
   padding-left: 4rem;
   div.blogContentContainer {
     // background-color: red;
     background-color: #fff;
+    min-height:15rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -2px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
@@ -56,16 +57,15 @@ export const BlogBox = styled.div`
     p {
       margin-bottom: 1rem;
     }
+    p.discription{
+      color: rgb(105, 102, 102);
+    }
     a {
-      button {
-        border:none;
-        background-color: #fff;
-        &:hover{
-            border:none;
+        &:hover{ 
             cursor:pointer;
         }
-      }
     }
+
   }
 
   @media screen and (max-width: ${({ theme }) => theme.media.mobile}) {

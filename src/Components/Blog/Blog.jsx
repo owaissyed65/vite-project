@@ -22,7 +22,7 @@ const Blog = () => {
       disc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
       sequi eligendi cumque, inventore aperiam rem quaerat! Dicta
       totam quisquam eligendi.`,
-      slug: "1",
+      slug: "2",
     },
     {
       heading:
@@ -30,7 +30,7 @@ const Blog = () => {
       disc: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
       sequi eligendi cumque, inventore aperiam rem quaerat! Dicta
       totam quisquam eligendi.`,
-      slug: "1",
+      slug: "3",
     },
   ];
   const dispatch = useDispatch();
@@ -47,22 +47,16 @@ const Blog = () => {
           <BlogBox key={index}>
             <div className="blogContentContainer">
               <p>Date</p>
-              <a href="">
-                <h1>
-                  {data.heading}
-                </h1>
-              </a>
-              <p>
-                {data.disc}
-              </p>
-              <Link to={`/blog/details/${data.slug}`}>
-                <button
-                  onClick={() => {
-                    dispatch(paramsAction(data.slug));
-                  }}
-                >
-                  Read More
-                </button>
+              <Link to={`/blog/details/${data.slug}`} onClick={() => {
+                dispatch(paramsAction(data.slug));
+              }}>
+                <h1>{data.heading}</h1>
+              </Link>
+              <p className="discription">{data.disc}</p>
+              <Link to={`/blog/details/${data.slug}`} onClick={() => {
+                dispatch(paramsAction(data.slug));
+              }}>
+                Read More
               </Link>
             </div>
           </BlogBox>

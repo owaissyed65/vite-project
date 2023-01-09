@@ -6,9 +6,9 @@ top:0;
 background-color:${({ theme }) => theme.bg};
 font-size:2rem;
 display:flex;
-height:7.4rem;
+max-height:7.4rem;
 font-family:${({ theme }) => theme.nav.fontFamily};
-z-index:10;
+z-index:100;
 div.logo{
         flex:1.5;
         // background-color:purple;
@@ -18,7 +18,7 @@ div.logo{
         a{
             text-decoration: none;   
             img{
-                height:14rem;
+                max-height:14rem;
                 // background-color:white;
                 filter: invert(100%);
                 opacity:3;
@@ -64,7 +64,7 @@ div.menu{
         flex:1.5;
         display:flex;
         justify-content:center;
-        height:100%;
+        max-height:100%;
         align-items:center;
     }
     ul.list1{

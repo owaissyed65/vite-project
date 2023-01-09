@@ -5,7 +5,7 @@ import Navbar from './NavbarFolder/Navbar'
 const Header = () => {
   return (
     <>
-      <Navbar />
+      <Navbar home='home' skills='skills' experience='experience' project='project' myResume='myResume' icon='logo'/>
       <NavbarDown />
     </>
   )
